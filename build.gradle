@@ -8,6 +8,7 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
@@ -15,8 +16,17 @@ dependencies {
     implementation "com.pinterest:ktlint:0.39.0"
     implementation "com.pinterest.ktlint:ktlint-core:0.39.0"
     implementation "com.pinterest.ktlint:ktlint-ruleset-standard:0.39.0"
+    implementation "com.pinterest.ktlint:ktlint-ruleset-experimental:0.39.0"
+
+    testImplementation "org.junit.jupiter:junit-jupiter:5.7.0"
+    testImplementation 'org.amshove.kluent:kluent:1.61'
+    testImplementation "org.jetbrains.kotlin:kotlin-test-junit:1.3.72"
 }
 
 application {
-    mainClass = 'com.example.Main'
+    mainClassName = 'com.example.Main'
+}
+
+tasks.test {
+    useJUnitPlatform()
 }

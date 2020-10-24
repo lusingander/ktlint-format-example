@@ -4,7 +4,7 @@ import ktlint.format
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-class Semicolon {
+class NoSemicolons {
 
     @Test
     fun defineVariables() {

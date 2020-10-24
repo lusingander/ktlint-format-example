@@ -4,7 +4,7 @@ import ktlint.format
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
-class Indentation {
+class IndentationFormatting {
 
     @Test
     fun primaryConstructor() {
